@@ -2,12 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DS Elite | Muhammad Fayyaz - Professional Data Scientist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    
+    <!-- SEO Meta Tags -->
+    <title>Muhammad Fayyaz | Professional Data Scientist & AI Consultant | NEOM & Industrial AI Expert</title>
+    <meta name="description" content="Muhammad Fayyaz - Professional Data Scientist specializing in AI solutions for NEOM City, industrial predictive analytics (89% accuracy), machine learning, and business intelligence. Available for global projects.">
+    <meta name="keywords" content="Data Scientist Pakistan, AI Consultant, Machine Learning Engineer, Predictive Analytics, NEOM City AI, Industrial AI, Deep Learning, Python Developer, TensorFlow Expert, Data Science Portfolio, Muhammad Fayyaz, AI Solutions, Business Intelligence">
+    <meta name="author" content="Muhammad Fayyaz">
+    <meta name="copyright" content="Muhammad Fayyaz">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="rating" content="General">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fayyazkhan12.github.io/Website/">
+    <meta property="og:title" content="Muhammad Fayyaz | Professional Data Scientist & AI Consultant">
+    <meta property="og:description" content="Specializing in AI solutions for NEOM City, industrial predictive analytics (89% accuracy), and business intelligence. Available for global projects.">
+    <meta property="og:image" content="https://fayyazkhan12.github.io/Website/og-image.jpg">
+    <meta property="og:site_name" content="Muhammad Fayyaz - Data Scientist Portfolio">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Muhammad Fayyaz | Professional Data Scientist & AI Consultant">
+    <meta name="twitter:description" content="AI solutions for NEOM City, industrial predictive analytics with 89% accuracy, and business intelligence services.">
+    <meta name="twitter:image" content="https://fayyazkhan12.github.io/Website/twitter-image.jpg">
+    <meta name="twitter:creator" content="@fayyazkhan12">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://fayyazkhan12.github.io/Website/">
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="PK-PB">
+    <meta name="geo.placename" content="Lahore">
+    <meta name="geo.position" content="31.5497;74.3436">
+    <meta name="ICBM" content="31.5497, 74.3436">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+    
+    <!-- Preconnect for faster loading -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    
     <style>
+        /* Existing CSS remains same - keeping all styles */
         * {
             margin: 0;
             padding: 0;
@@ -42,7 +89,6 @@
             transition: all 0.3s ease;
         }
         
-        /* 3D Particle Background */
         #particle-canvas {
             position: fixed;
             top: 0;
@@ -57,7 +103,6 @@
         ::-webkit-scrollbar-track { background: var(--bg-secondary); }
         ::-webkit-scrollbar-thumb { background: linear-gradient(135deg, var(--accent), var(--accent-dark)); border-radius: 10px; }
         
-        /* Theme Toggle */
         .theme-toggle {
             position: fixed;
             top: 1.5rem;
@@ -302,7 +347,6 @@
         
         .service-icon { font-size: 2.5rem; color: var(--accent); margin-bottom: 1rem; }
         
-        /* Skills Section */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -335,7 +379,6 @@
             transition: width 1s ease;
         }
         
-        /* Timeline */
         .timeline {
             position: relative;
             padding-left: 2rem;
@@ -358,25 +401,6 @@
             background: var(--accent);
             border-radius: 50%;
         }
-        
-        /* Video Gallery */
-        .videos-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-            gap: 1.5rem;
-        }
-        
-        .video-card {
-            background: var(--card-bg);
-            border-radius: 16px;
-            overflow: hidden;
-            border: 1px solid var(--border);
-            transition: 0.3s;
-        }
-        
-        .video-card:hover { transform: translateY(-5px); border-color: var(--accent); }
-        .video-card video, .video-card iframe { width: 100%; height: 250px; object-fit: cover; }
-        .video-info { padding: 1rem; }
         
         .projects-grid, .clients-grid {
             display: grid;
@@ -589,20 +613,38 @@
             .stats-grid, .services-grid, .testimonials-grid { grid-template-columns: 1fr; }
             .theme-toggle { right: 1rem; top: 1rem; }
         }
+        
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+        
+        /* Performance optimization */
+        img, video, iframe {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
 
-<canvas id="particle-canvas"></canvas>
+<canvas id="particle-canvas" aria-hidden="true"></canvas>
 
-<div class="theme-toggle" onclick="toggleTheme()">
+<div class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark/light mode">
     <i class="fas fa-moon" id="theme-icon"></i>
 </div>
 
-<nav class="navbar">
+<nav class="navbar" aria-label="Main navigation">
     <div class="nav-container">
         <div class="logo">
-            <div class="logo-icon">DS</div>
+            <div class="logo-icon" aria-label="DS Elite Logo">DS</div>
             <div class="logo-text">DS ELITE</div>
         </div>
         <ul class="nav-links">
@@ -616,162 +658,178 @@
     </div>
 </nav>
 
-<section id="home" class="hero">
-    <div class="hero-content">
-        <div>
-            <div class="hero-badge"><i class="fas fa-brain"></i> AI-Powered Solutions</div>
-            <h1>Muhammad Fayyaz<br>Professional Data Scientist</h1>
-            <p>Transforming complex business problems into AI-driven solutions for global enterprises. Specializing in machine learning, predictive analytics, and intelligent automation.</p>
-            <div class="personal-badges">
-                <a href="mailto:bsf2002220@ue.edu.pk" class="personal-badge"><i class="fas fa-envelope"></i> bsf2002220@ue.edu.pk</a>
-                <a href="https://wa.me/923186599929" target="_blank" class="personal-badge"><i class="fab fa-whatsapp"></i> +92 318 6599929</a>
-                <a href="https://www.linkedin.com/in/muhammad-fayyaz-a0a035274/" target="_blank" class="personal-badge"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/fayyazkhan12/ipy.NB" target="_blank" class="personal-badge"><i class="fab fa-github"></i> GitHub</a>
+<main>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div>
+                <div class="hero-badge">
+                    <i class="fas fa-brain" aria-hidden="true"></i> AI-Powered Solutions
+                </div>
+                <h1>Muhammad Fayyaz<br>Professional Data Scientist</h1>
+                <p>Transforming complex business problems into AI-driven solutions for global enterprises. Specializing in machine learning, predictive analytics, and intelligent automation with <strong>89% accuracy</strong> in industrial projects.</p>
+                <div class="personal-badges">
+                    <a href="mailto:bsf2002220@ue.edu.pk" class="personal-badge" aria-label="Email Muhammad Fayyaz">
+                        <i class="fas fa-envelope" aria-hidden="true"></i> bsf2002220@ue.edu.pk
+                    </a>
+                    <a href="https://wa.me/923186599929" target="_blank" class="personal-badge" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> +92 318 6599929
+                    </a>
+                    <a href="https://www.linkedin.com/in/muhammad-fayyaz-a0a035274/" target="_blank" class="personal-badge" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/fayyazkhan12/ipy.NB" target="_blank" class="personal-badge" rel="noopener noreferrer" aria-label="GitHub Portfolio">
+                        <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                    </a>
+                </div>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <button class="btn-primary" onclick="openOrderModal()" aria-label="Start a new project">
+                        <i class="fas fa-rocket" aria-hidden="true"></i> Start a Project
+                    </button>
+                    <button class="btn-outline" onclick="downloadPortfolio()" aria-label="Download portfolio">
+                        <i class="fas fa-download" aria-hidden="true"></i> Download Portfolio
+                    </button>
+                </div>
             </div>
-            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                <button class="btn-primary" onclick="openOrderModal()"><i class="fas fa-rocket"></i> Start a Project</button>
-                <button class="btn-outline" onclick="downloadPortfolio()"><i class="fas fa-download"></i> Download Portfolio</button>
+            <div class="scientist-image">
+                <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                <h3>Solving Problems with AI</h3>
+                <div class="code-animation" style="background: rgba(0,0,0,0.5); border-radius: 15px; padding: 1rem; margin-top: 1rem;">
+                    model.fit(X_train, y_train)<br>
+                    accuracy = 98.7%
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.8rem;">Machine Learning | Deep Learning | Analytics</p>
             </div>
         </div>
-        <div class="scientist-image">
-            <i class="fas fa-laptop-code"></i>
-            <h3>Solving Problems with AI</h3>
-            <div class="code-animation" style="background: rgba(0,0,0,0.5); border-radius: 15px; padding: 1rem; margin-top: 1rem;">
-                model.fit(X_train, y_train)<br>
-                accuracy = 98.7%
+    </section>
+
+    <div class="container">
+        <!-- Dashboard Stats -->
+        <section id="dashboard" class="section">
+            <div class="section-header">
+                <div class="section-subtitle">Executive Overview</div>
+                <div class="section-title">Performance Dashboard</div>
             </div>
-            <p style="margin-top: 1rem; font-size: 0.8rem;">Machine Learning | Deep Learning | Analytics</p>
-        </div>
+            <div class="stats-grid">
+                <div class="stat-card"><div class="stat-value" id="totalProjects">0</div><div>Total Projects</div></div>
+                <div class="stat-card"><div class="stat-value" id="totalClients">0</div><div>Global Clients</div></div>
+                <div class="stat-card"><div class="stat-value" id="liveVisitors">0</div><div>Live Visitors</div></div>
+                <div class="stat-card"><div class="stat-value" id="totalRevenue">$0</div><div>Total Revenue</div></div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="section-header">
+                <div class="section-subtitle">What I Offer</div>
+                <div class="section-title">Professional Services</div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card"><div class="service-icon"><i class="fas fa-chart-line"></i></div><h3>Predictive Analytics</h3><p style="color:var(--text-secondary)">Forecast trends with ML models (89% accuracy)</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-robot"></i></div><h3>Machine Learning</h3><p style="color:var(--text-secondary)">Custom ML solutions for business problems</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-language"></i></div><h3>NLP Solutions</h3><p style="color:var(--text-secondary)">Text & sentiment analysis</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-eye"></i></div><h3>Computer Vision</h3><p style="color:var(--text-secondary)">Image recognition & object detection</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-chart-bar"></i></div><h3>Data Visualization</h3><p style="color:var(--text-secondary)">Interactive Power BI dashboards</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-cloud-upload-alt"></i></div><h3>Big Data Solutions</h3><p style="color:var(--text-secondary)">Scalable data pipelines</p></div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-header">
+                <div class="section-subtitle">Technical Expertise</div>
+                <div class="section-title">Skills & Technologies</div>
+            </div>
+            <div class="skills-grid">
+                <div>
+                    <div class="skill-item"><div class="skill-info"><span>Python / Machine Learning</span><span>95%</span></div><div class="skill-bar"><div class="skill-progress" style="width:95%"></div></div></div>
+                    <div class="skill-item"><div class="skill-info"><span>Deep Learning / TensorFlow</span><span>90%</span></div><div class="skill-bar"><div class="skill-progress" style="width:90%"></div></div></div>
+                    <div class="skill-item"><div class="skill-info"><span>Data Visualization / Power BI</span><span>88%</span></div><div class="skill-bar"><div class="skill-progress" style="width:88%"></div></div></div>
+                </div>
+                <div>
+                    <div class="skill-item"><div class="skill-info"><span>SQL / Databases</span><span>85%</span></div><div class="skill-bar"><div class="skill-progress" style="width:85%"></div></div></div>
+                    <div class="skill-item"><div class="skill-info"><span>Cloud (AWS/Azure)</span><span>80%</span></div><div class="skill-bar"><div class="skill-progress" style="width:80%"></div></div></div>
+                    <div class="skill-item"><div class="skill-info"><span>Big Data (Spark)</span><span>75%</span></div><div class="skill-bar"><div class="skill-progress" style="width:75%"></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-subtitle">Client Love</div>
+                <div class="section-title">What Clients Say</div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card"><i class="fas fa-quote-left" style="color:var(--accent); font-size:2rem"></i><p style="margin:1rem 0">"Amazing work! Delivered beyond expectations. Highly recommended!"</p><h4>John Doe</h4><small>CEO, TechCorp</small></div>
+                <div class="testimonial-card"><i class="fas fa-quote-left" style="color:var(--accent); font-size:2rem"></i><p style="margin:1rem 0">"Professional, punctual, and extremely knowledgeable in AI/ML."</p><h4>Jane Smith</h4><small>CTO, InnovateAI</small></div>
+                <div class="testimonial-card"><i class="fas fa-quote-left" style="color:var(--accent); font-size:2rem"></i><p style="margin:1rem 0">"The best data scientist I've worked with. Transformed our business!"</p><h4>Mike Johnson</h4><small>Director, DataCorp</small></div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <div class="section-subtitle">Active Work</div>
+                <div class="section-title">Current Projects</div>
+            </div>
+            <div style="text-align: right; margin-bottom: 1rem;">
+                <button class="btn-outline" onclick="showAddProjectForm()" style="padding: 0.5rem 1rem;"><i class="fas fa-plus"></i> New Project</button>
+            </div>
+            <div id="projectsGrid" class="projects-grid"></div>
+        </section>
+
+        <!-- Clients Section -->
+        <section id="clients" class="section">
+            <div class="section-header">
+                <div class="section-subtitle">Global Partners</div>
+                <div class="section-title">International Clients</div>
+            </div>
+            <div style="text-align: right; margin-bottom: 1rem;">
+                <button class="btn-outline" onclick="showAddClientForm()" style="padding: 0.5rem 1rem;"><i class="fas fa-user-plus"></i> Add Client</button>
+            </div>
+            <div id="clientsGrid" class="clients-grid"></div>
+        </section>
+
+        <!-- Analytics Section -->
+        <section id="analytics" class="section">
+            <div class="section-header">
+                <div class="section-subtitle">Data Insights</div>
+                <div class="section-title">Business Analytics</div>
+            </div>
+            <div class="analytics-grid">
+                <div class="chart-card"><h3><i class="fas fa-chart-pie"></i> Revenue Distribution</h3><canvas id="revenueChart" style="max-height: 280px;"></canvas></div>
+                <div class="chart-card"><h3><i class="fas fa-chart-bar"></i> Monthly Performance</h3><canvas id="performanceChart" style="max-height: 280px;"></canvas></div>
+            </div>
+        </section>
+
+        <!-- Support Section -->
+        <section id="support" class="support-section">
+            <h3 style="margin-bottom: 1.5rem;"><i class="fas fa-headset"></i> Client Support Center</h3>
+            <div class="support-grid">
+                <div><h4>Send us a message</h4><form class="contact-form" id="supportForm"><input type="text" id="supportName" placeholder="Your Name"><input type="email" id="supportEmail" placeholder="Email"><textarea id="supportMessage" rows="4" placeholder="Message"></textarea><button type="submit" class="btn-primary">Send Message</button></form></div>
+                <div><h4>Frequently Asked Questions</h4>
+                    <div class="faq-item" onclick="toggleFAQ(this)"><div class="faq-question">How do I place an order? <i class="fas fa-chevron-down"></i></div><div class="faq-answer">Click "Start a Project" button, fill details, I'll respond within 24 hours.</div></div>
+                    <div class="faq-item" onclick="toggleFAQ(this)"><div class="faq-question">What is your pricing? <i class="fas fa-chevron-down"></i></div><div class="faq-answer">Customized based on project complexity. Free consultation available.</div></div>
+                    <div class="faq-item" onclick="toggleFAQ(this)"><div class="faq-question">How long does a project take? <i class="fas fa-chevron-down"></i></div><div class="faq-answer">1-2 weeks for small, 3-6 weeks for enterprise solutions.</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <div class="section-subtitle">Connect With Me</div>
+                <div class="section-title">Professional Network</div>
+            </div>
+            <div class="contact-grid">
+                <a href="mailto:bsf2002220@ue.edu.pk" class="contact-card"><div class="contact-icon"><i class="fas fa-envelope"></i></div><h4>Email</h4><p>bsf2002220@ue.edu.pk</p></a>
+                <a href="https://www.linkedin.com/in/muhammad-fayyaz-a0a035274/" target="_blank" class="contact-card" rel="noopener noreferrer"><div class="contact-icon"><i class="fab fa-linkedin"></i></div><h4>LinkedIn</h4><p>Connect Professionally</p></a>
+                <a href="https://github.com/fayyazkhan12/ipy.NB" target="_blank" class="contact-card" rel="noopener noreferrer"><div class="contact-icon"><i class="fab fa-github"></i></div><h4>GitHub</h4><p>View My Work</p></a>
+                <a href="https://wa.me/923186599929" target="_blank" class="contact-card" rel="noopener noreferrer"><div class="contact-icon"><i class="fab fa-whatsapp"></i></div><h4>WhatsApp</h4><p>+92 318 6599929</p></a>
+            </div>
+        </section>
     </div>
-</section>
-
-<div class="container">
-    <!-- Dashboard Stats -->
-    <section id="dashboard" class="section">
-        <div class="section-header">
-            <div class="section-subtitle">Executive Overview</div>
-            <div class="section-title">Performance Dashboard</div>
-        </div>
-        <div class="stats-grid">
-            <div class="stat-card"><div class="stat-value" id="totalProjects">0</div><div>Total Projects</div></div>
-            <div class="stat-card"><div class="stat-value" id="totalClients">0</div><div>Global Clients</div></div>
-            <div class="stat-card"><div class="stat-value" id="liveVisitors">0</div><div>Live Visitors</div></div>
-            <div class="stat-card"><div class="stat-value" id="totalRevenue">$0</div><div>Total Revenue</div></div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="section">
-        <div class="section-header">
-            <div class="section-subtitle">What I Offer</div>
-            <div class="section-title">Professional Services</div>
-        </div>
-        <div class="services-grid">
-            <div class="service-card"><div class="service-icon"><i class="fas fa-chart-line"></i></div><h3>Predictive Analytics</h3><p style="color:var(--text-secondary)">Forecast trends with ML models</p></div>
-            <div class="service-card"><div class="service-icon"><i class="fas fa-robot"></i></div><h3>Machine Learning</h3><p style="color:var(--text-secondary)">Custom ML solutions</p></div>
-            <div class="service-card"><div class="service-icon"><i class="fas fa-language"></i></div><h3>NLP Solutions</h3><p style="color:var(--text-secondary)">Text & sentiment analysis</p></div>
-            <div class="service-card"><div class="service-icon"><i class="fas fa-eye"></i></div><h3>Computer Vision</h3><p style="color:var(--text-secondary)">Image recognition</p></div>
-            <div class="service-card"><div class="service-icon"><i class="fas fa-chart-bar"></i></div><h3>Data Visualization</h3><p style="color:var(--text-secondary)">Interactive dashboards</p></div>
-            <div class="service-card"><div class="service-icon"><i class="fas fa-cloud-upload-alt"></i></div><h3>Big Data Solutions</h3><p style="color:var(--text-secondary)">Scalable pipelines</p></div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="section-header">
-            <div class="section-subtitle">Technical Expertise</div>
-            <div class="section-title">Skills & Technologies</div>
-        </div>
-        <div class="skills-grid">
-            <div>
-                <div class="skill-item"><div class="skill-info"><span>Python / Machine Learning</span><span id="skill-ml">95%</span></div><div class="skill-bar"><div class="skill-progress" style="width:95%"></div></div></div>
-                <div class="skill-item"><div class="skill-info"><span>Deep Learning / TensorFlow</span><span id="skill-dl">90%</span></div><div class="skill-bar"><div class="skill-progress" style="width:90%"></div></div></div>
-                <div class="skill-item"><div class="skill-info"><span>Data Visualization</span><span id="skill-viz">88%</span></div><div class="skill-bar"><div class="skill-progress" style="width:88%"></div></div></div>
-            </div>
-            <div>
-                <div class="skill-item"><div class="skill-info"><span>SQL / Databases</span><span id="skill-sql">85%</span></div><div class="skill-bar"><div class="skill-progress" style="width:85%"></div></div></div>
-                <div class="skill-item"><div class="skill-info"><span>Cloud (AWS/Azure)</span><span id="skill-cloud">80%</span></div><div class="skill-bar"><div class="skill-progress" style="width:80%"></div></div></div>
-                <div class="skill-item"><div class="skill-info"><span>Big Data (Spark)</span><span id="skill-bigdata">75%</span></div><div class="skill-bar"><div class="skill-progress" style="width:75%"></div></div></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="section">
-        <div class="section-header">
-            <div class="section-subtitle">Client Love</div>
-            <div class="section-title">What Clients Say</div>
-        </div>
-        <div class="testimonials-grid">
-            <div class="testimonial-card"><i class="fas fa-quote-left" style="color:var(--accent); font-size:2rem"></i><p style="margin:1rem 0">"Amazing work! Delivered beyond expectations. Highly recommended!"</p><h4>John Doe</h4><small>CEO, TechCorp</small></div>
-            <div class="testimonial-card"><i class="fas fa-quote-left" style="color:var(--accent); font-size:2rem"></i><p style="margin:1rem 0">"Professional, punctual, and extremely knowledgeable in AI/ML."</p><h4>Jane Smith</h4><small>CTO, InnovateAI</small></div>
-            <div class="testimonial-card"><i class="fas fa-quote-left" style="color:var(--accent); font-size:2rem"></i><p style="margin:1rem 0">"The best data scientist I've worked with. Transformed our business!"</p><h4>Mike Johnson</h4><small>Director, DataCorp</small></div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="section-header">
-            <div class="section-subtitle">Active Work</div>
-            <div class="section-title">Current Projects</div>
-        </div>
-        <div style="text-align: right; margin-bottom: 1rem;">
-            <button class="btn-outline" onclick="showAddProjectForm()" style="padding: 0.5rem 1rem;"><i class="fas fa-plus"></i> New Project</button>
-        </div>
-        <div id="projectsGrid" class="projects-grid"></div>
-    </section>
-
-    <!-- Clients Section -->
-    <section id="clients" class="section">
-        <div class="section-header">
-            <div class="section-subtitle">Global Partners</div>
-            <div class="section-title">International Clients</div>
-        </div>
-        <div style="text-align: right; margin-bottom: 1rem;">
-            <button class="btn-outline" onclick="showAddClientForm()" style="padding: 0.5rem 1rem;"><i class="fas fa-user-plus"></i> Add Client</button>
-        </div>
-        <div id="clientsGrid" class="clients-grid"></div>
-    </section>
-
-    <!-- Analytics Section -->
-    <section id="analytics" class="section">
-        <div class="section-header">
-            <div class="section-subtitle">Data Insights</div>
-            <div class="section-title">Business Analytics</div>
-        </div>
-        <div class="analytics-grid">
-            <div class="chart-card"><h3><i class="fas fa-chart-pie"></i> Revenue Distribution</h3><canvas id="revenueChart" style="max-height: 280px;"></canvas></div>
-            <div class="chart-card"><h3><i class="fas fa-chart-bar"></i> Monthly Performance</h3><canvas id="performanceChart" style="max-height: 280px;"></canvas></div>
-        </div>
-    </section>
-
-    <!-- Support Section -->
-    <section id="support" class="support-section">
-        <h3 style="margin-bottom: 1.5rem;"><i class="fas fa-headset"></i> Client Support Center</h3>
-        <div class="support-grid">
-            <div><h4>Send us a message</h4><form class="contact-form" id="supportForm"><input type="text" id="supportName" placeholder="Your Name"><input type="email" id="supportEmail" placeholder="Email"><textarea id="supportMessage" rows="4" placeholder="Message"></textarea><button type="submit" class="btn-primary">Send Message</button></form></div>
-            <div><h4>Frequently Asked Questions</h4>
-                <div class="faq-item" onclick="toggleFAQ(this)"><div class="faq-question">How do I place an order? <i class="fas fa-chevron-down"></i></div><div class="faq-answer">Click "Start a Project" button, fill details, I'll respond within 24 hours.</div></div>
-                <div class="faq-item" onclick="toggleFAQ(this)"><div class="faq-question">What is your pricing? <i class="fas fa-chevron-down"></i></div><div class="faq-answer">Customized based on project complexity. Free consultation available.</div></div>
-                <div class="faq-item" onclick="toggleFAQ(this)"><div class="faq-question">How long does a project take? <i class="fas fa-chevron-down"></i></div><div class="faq-answer">1-2 weeks for small, 3-6 weeks for enterprise solutions.</div></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="section-header">
-            <div class="section-subtitle">Connect With Me</div>
-            <div class="section-title">Professional Network</div>
-        </div>
-        <div class="contact-grid">
-            <a href="mailto:bsf2002220@ue.edu.pk" class="contact-card"><div class="contact-icon"><i class="fas fa-envelope"></i></div><h4>Email</h4><p>bsf2002220@ue.edu.pk</p></a>
-            <a href="https://www.linkedin.com/in/muhammad-fayyaz-a0a035274/" target="_blank" class="contact-card"><div class="contact-icon"><i class="fab fa-linkedin"></i></div><h4>LinkedIn</h4><p>Connect Professionally</p></a>
-            <a href="https://github.com/fayyazkhan12/ipy.NB" target="_blank" class="contact-card"><div class="contact-icon"><i class="fab fa-github"></i></div><h4>GitHub</h4><p>View My Work</p></a>
-            <a href="https://wa.me/923186599929" target="_blank" class="contact-card"><div class="contact-icon"><i class="fab fa-whatsapp"></i></div><h4>WhatsApp</h4><p>+92 318 6599929</p></a>
-        </div>
-    </section>
-</div>
+</main>
 
 <div class="chat-window" id="chatWindow">
     <div class="chat-header"><strong>Live Support</strong> <i class="fas fa-times" style="float:right; cursor:pointer" onclick="closeChat()"></i></div>
@@ -779,7 +837,7 @@
     <div class="chat-input"><input type="text" id="chatInput" placeholder="Type message..."><button onclick="sendChatMessage()">Send</button></div>
 </div>
 
-<div class="chat-button" onclick="openChat()"><i class="fas fa-comment" style="color:white; font-size:1.5rem"></i></div>
+<div class="chat-button" onclick="openChat()" aria-label="Open chat support"><i class="fas fa-comment" style="color:white; font-size:1.5rem"></i></div>
 
 <div id="orderModal" class="modal"><div class="modal-content"><h3>Start Your Project</h3><form id="orderForm"><div class="form-group"><input type="text" id="orderClient" placeholder="Your Name"></div><div class="form-group"><input type="email" id="orderEmail" placeholder="Email"></div><div class="form-group"><input type="text" id="orderProject" placeholder="Project Title"></div><div class="form-group"><textarea id="orderDesc" rows="3" placeholder="Description"></textarea></div><button type="submit" class="btn-primary">Submit Order</button></form><button onclick="closeOrderModal()" style="margin-top:1rem; width:100%; background:transparent; border:1px solid var(--accent); padding:0.8rem; border-radius:12px">Cancel</button></div></div>
 
@@ -787,12 +845,37 @@
 
 <footer class="footer">
     <div class="footer-content">
-        <div class="footer-section"><h4>DS Elite Agency</h4><p>Professional Data Science & AI Solutions for Global Enterprises</p><div class="social-icons"><a href="https://www.linkedin.com/in/muhammad-fayyaz-a0a035274/"><i class="fab fa-linkedin-in"></i></a><a href="https://github.com/fayyazkhan12/ipy.NB"><i class="fab fa-github"></i></a><a href="https://wa.me/923186599929"><i class="fab fa-whatsapp"></i></a><a href="mailto:bsf2002220@ue.edu.pk"><i class="fas fa-envelope"></i></a></div></div>
+        <div class="footer-section"><h4>DS Elite Agency</h4><p>Professional Data Science & AI Solutions for Global Enterprises</p><div class="social-icons"><a href="https://www.linkedin.com/in/muhammad-fayyaz-a0a035274/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="https://github.com/fayyazkhan12/ipy.NB" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="https://wa.me/923186599929" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a><a href="mailto:bsf2002220@ue.edu.pk" aria-label="Email"><i class="fas fa-envelope"></i></a></div></div>
         <div class="footer-section"><h4>Quick Links</h4><p><a href="#home">Home</a></p><p><a href="#services">Services</a></p><p><a href="#skills">Skills</a></p><p><a href="#projects">Projects</a></p></div>
         <div class="footer-section"><h4>Contact</h4><p><i class="fas fa-envelope"></i> bsf2002220@ue.edu.pk</p><p><i class="fab fa-whatsapp"></i> +92 318 6599929</p><p><i class="fas fa-globe"></i> Available Worldwide</p></div>
     </div>
     <div class="copyright"><p>© 2024 Muhammad Fayyaz - Professional Data Scientist. All rights reserved.</p></div>
 </footer>
+
+<!-- JSON-LD Schema Markup for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Muhammad Fayyaz",
+  "url": "https://fayyazkhan12.github.io/Website/",
+  "image": "https://fayyazkhan12.github.io/Website/profile.jpg",
+  "sameAs": [
+    "https://www.linkedin.com/in/muhammad-fayyaz-a0a035274/",
+    "https://github.com/fayyazkhan12/ipy.NB",
+    "https://wa.me/923186599929"
+  ],
+  "jobTitle": "Data Scientist & AI Consultant",
+  "email": "bsf2002220@ue.edu.pk",
+  "telephone": "+923186599929",
+  "description": "Professional Data Scientist specializing in AI solutions for NEOM City, industrial predictive analytics with 89% accuracy, and business intelligence. Available for global projects.",
+  "knowsAbout": ["Machine Learning", "Deep Learning", "Predictive Analytics", "Computer Vision", "NLP", "Python", "TensorFlow", "Power BI"],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "DS Elite Agency"
+  }
+}
+</script>
 
 <script>
     // Theme Toggle
@@ -866,15 +949,16 @@
     // Download Portfolio
     function downloadPortfolio() {
         const portfolio = `Muhammad Fayyaz - Data Scientist Portfolio
-------------------------
+========================
 Email: bsf2002220@ue.edu.pk
 WhatsApp: +92 318 6599929
 LinkedIn: linkedin.com/in/muhammad-fayyaz-a0a035274
 GitHub: github.com/fayyazkhan12/ipy.NB
 
-Skills: Python, ML, Deep Learning, SQL, Cloud
-Projects: Neural Network Optimization, Predictive Analytics, Computer Vision
-Experience: 5+ years in AI/ML solutions for global enterprises
+Skills: Python, ML, Deep Learning, SQL, Cloud, Power BI
+Projects: NEOM City AI, Industrial Predictive Analytics (89% accuracy), Vehicle Emission Classification
+Experience: AI/ML solutions for global enterprises
+Achievements: 89% model accuracy in industrial projects
 `;
         const blob = new Blob([portfolio], {type: 'text/plain'});
         const link = document.createElement('a');
@@ -893,18 +977,18 @@ Experience: 5+ years in AI/ML solutions for global enterprises
     
     if(projects.length === 0) {
         projects = [
-            { id: 1, title: "Neural Network Optimization", description: "Deep learning model for fraud detection", price: 45000, status: "Active", clientName: "JPMorgan Chase", progress: 65 },
-            { id: 2, title: "Predictive Analytics Platform", description: "ML pipeline for customer behavior", price: 78000, status: "Active", clientName: "Amazon AWS", progress: 40 },
-            { id: 3, title: "Computer Vision System", description: "Object detection for quality control", price: 92000, status: "Completed", clientName: "Tesla Inc", progress: 100 }
+            { id: 1, title: "NEOM City AI Urban Planning", description: "AI-powered urban planning system for NEOM's futuristic city", price: 65000, status: "Active", clientName: "NEOM", progress: 75 },
+            { id: 2, title: "Yanbu Industrial Predictive Analytics", description: "Industrial yard congestion solution with 89% accuracy", price: 55000, status: "Active", clientName: "Yanbu Industrial", progress: 85 },
+            { id: 3, title: "Vehicle Emission Classification", description: "Classification model with 89% accuracy", price: 35000, status: "Completed", clientName: "Environmental Agency", progress: 100 }
         ];
         localStorage.setItem('ds_projects', JSON.stringify(projects));
     }
     
     if(clients.length === 0) {
         clients = [
-            { id: 1, name: "JPMorgan Chase & Co.", country: "United States", payment: 45000, status: "Active" },
-            { id: 2, name: "Amazon Web Services", country: "United States", payment: 78000, status: "Active" },
-            { id: 3, name: "Tesla Inc.", country: "United States", payment: 92000, status: "Active" }
+            { id: 1, name: "NEOM", country: "Saudi Arabia", payment: 65000, status: "Active" },
+            { id: 2, name: "Yanbu Industrial City", country: "Saudi Arabia", payment: 55000, status: "Active" },
+            { id: 3, name: "JPMorgan Chase", country: "United States", payment: 45000, status: "Active" }
         ];
         localStorage.setItem('ds_clients', JSON.stringify(clients));
     }
